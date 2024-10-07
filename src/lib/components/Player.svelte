@@ -1,9 +1,9 @@
 <script>
   import { T } from "@threlte/core";
-  import { OrbitControls } from "@threlte/extras";
+  import { OrbitControls, Edges } from "@threlte/extras";
 </script>
 
-<T.PerspectiveCamera makeDefault position={[-10, 10, 10]} fov={15}>
+<T.PerspectiveCamera makeDefault position={[10, 0, 0]} fov={25}>
   <OrbitControls
     enableZoom={true}
     enableDamping
@@ -14,6 +14,7 @@
 </T.PerspectiveCamera>
 
 <T.Mesh position.x={0} position.y={0} position.z={0}>
-  <T.BoxGeometry />
+  <T.SphereGeometry />
   <T.MeshStandardMaterial color="#0059BA" />
+  <Edges color="black" />
 </T.Mesh>
