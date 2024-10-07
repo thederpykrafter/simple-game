@@ -1,0 +1,14 @@
+modules = ["svelte-kit-node-20:v10-20240319-38caddd", "nodejs-20:v30-20240319-38caddd"]
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+build = ["npm", "run", "build"]
+run = ["node", "build"]
+deploymentTarget = "gce"
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+exposeLocalhost = true
