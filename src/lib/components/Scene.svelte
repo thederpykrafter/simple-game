@@ -13,7 +13,7 @@
   <T.MeshStandardMaterial color="#0059BA" />
 
   {#each { length: 3 } as _, i}
-    <Instance position.y={i + 1} />
+    <Instance position.x={i + 1} />
   {/each}
 </InstancedMesh>
 
