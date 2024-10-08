@@ -3,7 +3,7 @@
   import { OrbitControls, Edges } from "@threlte/extras";
 
   let playerX = 0;
-  let playerY = 0;
+  let playerY = 1.5;
   let playerZ = 0;
 </script>
 
